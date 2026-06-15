@@ -271,6 +271,42 @@
             flex-shrink: 0;
         }
 
+        /* Project thumbnail logos */
+        .project-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.875rem;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .project-logo-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.07);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            backdrop-filter: blur(4px);
+        }
+
+        .project-logo-name {
+            font-family: 'Funnel Display', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.75);
+            letter-spacing: -0.02em;
+            white-space: nowrap;
+        }
+
         .hero-scroll {
             padding: 1.5rem 0 3rem;
             max-width: 1360px;
@@ -356,6 +392,7 @@
             display: flex;
             align-items: flex-end;
             padding: 1.75rem;
+            position: relative;
         }
 
         .project-item__media:hover .project-item__bg { transform: scale(1.025); }
@@ -736,12 +773,12 @@
         <div class="hero-right fade-in">
             <img src="assets/photo.jpg" alt="Georgi Kirilov" class="hero-photo" onerror="this.style.display='none'">
             <div class="hero-stat">
-                <div class="hero-stat-number">10K+</div>
-                <div class="hero-stat-label">Daily active users<br>on Deep Dream Generator</div>
+                <div class="hero-stat-number">50K+</div>
+                <div class="hero-stat-label">Daily active users<br>across platforms</div>
             </div>
             <div class="hero-stat">
-                <div class="hero-stat-number">M+</div>
-                <div class="hero-stat-label">AI images<br>served across platforms</div>
+                <div class="hero-stat-number">4+</div>
+                <div class="hero-stat-label">Years of<br>experience</div>
             </div>
             <div class="hero-available">
                 <div class="available-dot"></div>
@@ -776,6 +813,10 @@
             <div class="project-item fade-in">
                 <a class="project-item__media" href="https://deepdreamgenerator.com" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-ddg">
+                        <div class="project-logo">
+                            <div class="project-logo-icon">🧠</div>
+                            <span class="project-logo-name">Deep Dream Generator</span>
+                        </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">GPU Fleet Management</span>
                             <span class="tag-overlay">AI Integration</span>
@@ -793,6 +834,10 @@
             <div class="project-item fade-in">
                 <a class="project-item__media" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-freegen">
+                        <div class="project-logo">
+                            <div class="project-logo-icon">⚡</div>
+                            <span class="project-logo-name">freegen</span>
+                        </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">Serverless GPU</span>
                             <span class="tag-overlay">Distributed Inference</span>
@@ -810,6 +855,10 @@
             <div class="project-item fade-in">
                 <a class="project-item__media" href="https://imgsearch.com" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-imgsearch">
+                        <div class="project-logo">
+                            <div class="project-logo-icon">🔍</div>
+                            <span class="project-logo-name">imgsearch</span>
+                        </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">Vector Search</span>
                             <span class="tag-overlay">Qdrant</span>
