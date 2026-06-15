@@ -276,35 +276,29 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.875rem;
-            text-align: center;
-            pointer-events: none;
-        }
-
-        .project-logo-icon {
-            width: 64px;
-            height: 64px;
-            border-radius: 16px;
-            background: rgba(255,255,255,0.07);
-            border: 1px solid rgba(255,255,255,0.1);
+            transform: translate(-50%, -55%);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.75rem;
-            backdrop-filter: blur(4px);
+            pointer-events: none;
+            width: 80%;
         }
 
-        .project-logo-name {
+        .project-logo-img {
+            max-width: 220px;
+            max-height: 72px;
+            width: 100%;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.85;
+        }
+
+        .project-logo-wordmark {
             font-family: 'Funnel Display', sans-serif;
-            font-size: 1.125rem;
+            font-size: 2.25rem;
             font-weight: 700;
-            color: rgba(255,255,255,0.75);
-            letter-spacing: -0.02em;
-            white-space: nowrap;
+            color: rgba(255,255,255,0.82);
+            letter-spacing: -0.04em;
         }
 
         .hero-scroll {
@@ -457,7 +451,7 @@
         .marquee-track {
             display: flex;
             gap: 2.5rem;
-            animation: scroll-left 22s linear infinite;
+            animation: scroll-left 13s linear infinite;
             width: max-content;
         }
 
@@ -470,10 +464,10 @@
 
         .marquee-word {
             font-family: 'Funnel Display', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 2.75rem;
+            font-weight: 700;
             color: var(--muted);
-            letter-spacing: -0.025em;
+            letter-spacing: -0.035em;
             white-space: nowrap;
         }
 
@@ -487,6 +481,8 @@
             from { transform: translateX(0); }
             to   { transform: translateX(-50%); }
         }
+
+        .marquee-wrap { padding: 1.75rem 0; }
 
         /* ── STACKING SERVICES ── */
         .services-wrap {
@@ -814,8 +810,7 @@
                 <a class="project-item__media" href="https://deepdreamgenerator.com" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-ddg">
                         <div class="project-logo">
-                            <div class="project-logo-icon">🧠</div>
-                            <span class="project-logo-name">Deep Dream Generator</span>
+                            <img src="https://deepdreamgenerator.com/logo.svg" alt="Deep Dream Generator" class="project-logo-img">
                         </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">GPU Fleet Management</span>
@@ -835,8 +830,7 @@
                 <a class="project-item__media" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-freegen">
                         <div class="project-logo">
-                            <div class="project-logo-icon">⚡</div>
-                            <span class="project-logo-name">freegen</span>
+                            <span class="project-logo-wordmark">freegen</span>
                         </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">Serverless GPU</span>
@@ -856,8 +850,7 @@
                 <a class="project-item__media" href="https://imgsearch.com" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-imgsearch">
                         <div class="project-logo">
-                            <div class="project-logo-icon">🔍</div>
-                            <span class="project-logo-name">imgsearch</span>
+                            <img src="https://assets.imgsearch.com/assets/main/img/logo/logo_dark_bg.svg" alt="imgsearch" class="project-logo-img">
                         </div>
                         <div class="project-tags-overlay">
                             <span class="tag-overlay">Vector Search</span>
