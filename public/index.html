@@ -13,6 +13,7 @@
     <meta name="twitter:title" content="Georgi Kirilov — AI Infrastructure Engineer">
     <meta name="twitter:description" content="AI Infrastructure Engineer specializing in GPU pipelines, LLM integration, and AI platform development.">
     <title>Georgi Kirilov — AI Infrastructure Engineer</title>
+    <link rel="icon" type="image/jpeg" href="assets/photo.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -182,6 +183,7 @@
             transition: all 0.2s;
         }
         .tag:hover { border-color: var(--accent); color: var(--accent); }
+        [data-theme="light"] .tag { border-color: var(--border); }
 
         .tag-opp {
             border-color: rgba(26,26,26,0.2);
@@ -407,7 +409,7 @@
         .projects-list {
             display: flex;
             flex-direction: column;
-            gap: 4rem;
+            gap: 2.5rem;
         }
 
         .project-item__media {
@@ -500,8 +502,8 @@
         }
 
         .stack-slot {
-            height: 60vh;
-            min-height: 420px;
+            height: 48vh;
+            min-height: 380px;
         }
 
         .stack-slot:last-child {
@@ -760,18 +762,18 @@
         <div class="hero-left">
             <h1 class="hero-name fade-in">Georgi<br>Kirilov</h1>
             <div class="hero-tags fade-in">
-                <span class="tag">LLM Integration</span>
                 <span class="tag">Python</span>
+                <span class="tag">LLM Integration</span>
                 <span class="tag">GPU Fleet Orchestration</span>
-                <span class="tag">Stable Diffusion</span>
-                <span class="tag">Qdrant</span>
+                <span class="tag">RAG</span>
+                <span class="tag">MCP</span>
+                <span class="tag">Systems Engineering</span>
                 <span class="tag">Vector Databases</span>
                 <span class="tag">Docker</span>
                 <span class="tag">Redis</span>
                 <span class="tag">Laravel</span>
                 <span class="tag">Distributed Systems</span>
-                <span class="tag">Vast.ai</span>
-                <span class="tag">Modal</span>
+                <span class="tag">Stable Diffusion</span>
             </div>
             <div class="hero-cta fade-in">
                 <a href="assets/cv.pdf" class="btn btn-accent" download>
@@ -840,26 +842,6 @@
                 <p class="project-desc">Serving 20,000+ daily active users with cutting-edge AI art generation. Built and scaled the infrastructure handling GPU fleet management, real-time generation queues, and high-traffic serving — maintaining sub-second response times under heavy concurrent load.</p>
             </div>
 
-            <!-- freegen -->
-            <div class="project-item fade-in">
-                <a class="project-item__media" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
-                    <div class="project-item__bg bg-freegen">
-                        <div class="project-logo">
-                            <span class="project-logo-wordmark">freegen</span>
-                        </div>
-                        <div class="project-tags-overlay">
-                            <span class="tag-overlay">Autoscaling</span>
-                            <span class="tag-overlay">Distributed Inference</span>
-                            <span class="tag-overlay">Cost Optimization</span>
-                        </div>
-                    </div>
-                </a>
-                <a class="project-name-link" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
-                    <span>freegen</span> — High-Throughput AI Image Generation Platform
-                </a>
-                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform with autoscaling and self-healing mechanisms using GPU compute on local infastructure, Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
-            </div>
-
             <!-- imgsearch -->
             <div class="project-item fade-in">
                 <a class="project-item__media" href="https://imgsearch.com" target="_blank" rel="noopener noreferrer">
@@ -878,6 +860,26 @@
                     <span>imgsearch</span> — AI-Powered Semantic Image Search Engine
                 </a>
                 <p class="project-desc">Semantic image search powered by vector embeddings and Qdrant — enabling fast similarity search across large-scale image datasets. Users find visually similar content through natural language and image-to-image queries.</p>
+            </div>
+
+                        <!-- freegen -->
+            <div class="project-item fade-in">
+                <a class="project-item__media" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
+                    <div class="project-item__bg bg-freegen">
+                        <div class="project-logo">
+                            <span class="project-logo-wordmark">freegen</span>
+                        </div>
+                        <div class="project-tags-overlay">
+                            <span class="tag-overlay">Autoscaling</span>
+                            <span class="tag-overlay">Distributed Inference</span>
+                            <span class="tag-overlay">Cost Optimization</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="project-name-link" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
+                    <span>freegen</span> — High-Throughput AI Image Generation Platform
+                </a>
+                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform with autoscaling and self-healing mechanisms using GPU compute on local infastructure, Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
             </div>
 
         </div>
@@ -987,14 +989,14 @@
     <div class="cta-wrap">
         <div class="cta-card fade-in">
             <h2 class="cta-title">Let's build something<br>together.</h2>
-            <p class="cta-desc">Open to consulting, collaborations, and interesting projects in AI infrastructure.</p>
+            <p class="cta-desc">Open to consulting, collaborations, and interesting projects in AI infrastructure and Systems Design.</p>
             <div class="cta-links">
-                <a href="mailto:georgi@georgikirilov.com" class="btn btn-accent">
+                <a href="mailto:kirilov7@protonmail.com" class="btn btn-accent">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                         <polyline points="22,6 12,12 2,6"/>
                     </svg>
-                    georgi@georgikirilov.com
+                    kirilov7@protonmail.com
                 </a>
                 <a href="https://www.linkedin.com/in/georgikk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
@@ -1019,7 +1021,7 @@
 <footer>
     <div class="footer-wrap">
         <p>© 2026 Georgi Kirilov</p>
-        <a href="mailto:georgi@georgikirilov.com">georgi@georgikirilov.com</a>
+        <a href="mailto:kirilov7@protonmail.com">kirilov7@protonmail.com</a>
     </div>
 </footer>
 
