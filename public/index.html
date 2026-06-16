@@ -462,6 +462,13 @@
             line-height: 1.75;
         }
 
+        .bg-btc {
+            background:
+                radial-gradient(ellipse at 35% 45%, rgba(247,147,26,0.2) 0%, transparent 55%),
+                radial-gradient(ellipse at 75% 65%, rgba(255,120,0,0.1) 0%, transparent 45%),
+                linear-gradient(145deg, #1a0d00 0%, #2e1800 50%, #110900 100%);
+        }
+
         /* Project backgrounds */
         .bg-ddg {
             background:
@@ -880,7 +887,28 @@
                 <a class="project-name-link" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
                     <span>freegen</span> — High-Throughput AI Image Generation Platform
                 </a>
-                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform with autoscaling and self-healing mechanisms using GPU compute on local infastructure, Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
+                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform with autoscaling and self-healing mechanisms using GPU compute on local infrastructure, Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
+            </div>
+
+            <!-- BTC Trader -->
+            <div class="project-item fade-in">
+                <div class="project-item__media">
+                    <div class="project-item__bg bg-btc">
+                        <div class="project-logo" style="flex-direction: column; gap: 0.5rem;">
+                            <span style="font-size: 3.25rem; line-height: 1; color: rgba(247,147,26,0.9);">₿</span>
+                            <span class="project-logo-wordmark">BTC Trader</span>
+                        </div>
+                        <div class="project-tags-overlay">
+                            <span class="tag-overlay">Autonomous Daemon</span>
+                            <span class="tag-overlay">MCP Server</span>
+                            <span class="tag-overlay">Coinbase API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-name-link" style="cursor: default;">
+                    <span>BTC Autonomous Trading System</span> — Claude-Controlled Algo Trader
+                </div>
+                <p class="project-desc">Donchian Channel Breakout (40/20) strategy with Turtle-style pyramid scaling — up to 4 units, gated by Fear &amp; Greed index. Two independent processes share state: an autonomous daemon fires on 4h candle boundaries, while an MCP server exposes full control to Claude Desktop. Telegram provides a live command interface. Backtested +40.4% over 17 months (2.88 profit factor, 10.8% max drawdown).</p>
             </div>
 
         </div>
