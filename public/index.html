@@ -719,6 +719,17 @@
             .cta-card { padding: 3rem 1.5rem; }
             .footer-wrap { padding: 1.5rem 1.25rem; flex-direction: column; gap: 0.5rem; text-align: center; }
             .stack-card { padding: 2rem 1.5rem; }
+
+            .tag-overlay {
+                font-size: 0.6rem;
+                padding: 0.1875rem 0.4375rem;
+                letter-spacing: -0.01em;
+            }
+
+            .project-tags-overlay {
+                gap: 0.25rem;
+                overflow: hidden;
+            }
         }
     </style>
 </head>
@@ -777,7 +788,7 @@
         <div class="hero-right fade-in">
             <img src="assets/photo.jpg" alt="Georgi Kirilov" class="hero-photo" onerror="this.style.display='none'">
             <div class="hero-stat">
-                <div class="hero-stat-number">50K+</div>
+                <div class="hero-stat-number">100K+</div>
                 <div class="hero-stat-label">Daily active users<br>across platforms</div>
             </div>
             <div class="hero-stat">
@@ -826,7 +837,7 @@
                 <a class="project-name-link" href="https://deepdreamgenerator.com" target="_blank" rel="noopener noreferrer">
                     <span>Deep Dream Generator</span> — AI Image &amp; Video Generation Platform
                 </a>
-                <p class="project-desc">Serving 10,000+ daily active users with cutting-edge AI art generation. Built and scaled the infrastructure handling GPU fleet management, real-time generation queues, and high-traffic serving — maintaining sub-second response times under heavy concurrent load.</p>
+                <p class="project-desc">Serving 20,000+ daily active users with cutting-edge AI art generation. Built and scaled the infrastructure handling GPU fleet management, real-time generation queues, and high-traffic serving — maintaining sub-second response times under heavy concurrent load.</p>
             </div>
 
             <!-- freegen -->
@@ -837,7 +848,7 @@
                             <span class="project-logo-wordmark">freegen</span>
                         </div>
                         <div class="project-tags-overlay">
-                            <span class="tag-overlay">Serverless GPU</span>
+                            <span class="tag-overlay">Autoscaling</span>
                             <span class="tag-overlay">Distributed Inference</span>
                             <span class="tag-overlay">Cost Optimization</span>
                         </div>
@@ -846,7 +857,7 @@
                 <a class="project-name-link" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
                     <span>freegen</span> — High-Throughput AI Image Generation Platform
                 </a>
-                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform using serverless GPU compute on Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
+                <p class="project-desc">Millions of AI-generated images served. Built a high-throughput inference platform with autoscaling and self-healing mechanisms using GPU compute on local infastructure, Modal and Vast.ai — optimized for scale and cost-efficiency with distributed pipelines that handle burst traffic without over-provisioning.</p>
             </div>
 
             <!-- imgsearch -->
