@@ -574,7 +574,7 @@
         [data-theme="light"] .stack-card-ink h3.stack-card__title { color: #e8e4e0; }
         [data-theme="light"] .stack-card-ink .stack-card__num { color: rgba(232,228,224,0.5); }
         [data-theme="light"] .stack-card-ink .stack-card__desc { color: rgba(232,228,224,0.55); }
-        [data-theme="light"] .stack-card-ink .stack-card__deco { color: rgba(255,255,255,0.04); }
+
 
         .stack-card__tags {
             display: flex;
@@ -591,17 +591,12 @@
         .stack-card__desc.on-light { color: rgba(26,26,26,0.6); }
 
         .stack-card__deco {
-            font-family: 'Funnel Display', sans-serif;
-            font-size: clamp(5rem, 10vw, 9rem);
-            font-weight: 700;
-            letter-spacing: -0.04em;
+            font-size: clamp(6rem, 11vw, 10rem);
             line-height: 1;
             text-align: right;
             align-self: end;
+            filter: drop-shadow(0 4px 24px rgba(0,0,0,0.2));
         }
-        .stack-card__deco.on-dark { color: rgba(255,255,255,0.04); }
-        .stack-card__deco.on-light { color: rgba(26,26,26,0.06); }
-        .stack-card__deco.on-ink { color: rgba(255,255,255,0.04); }
 
         /* ── MANIFEST ── */
         .manifest-wrap {
