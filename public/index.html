@@ -569,7 +569,11 @@
             margin-bottom: 1.75rem;
         }
         h3.stack-card__title.on-dark { color: var(--text); }
-        h3.stack-card__title.on-light { color: var(--text-opp); }
+        h3.stack-card__title.on-light { color: #1a1a1a; }
+        [data-theme="light"] .stack-card-ink h3.stack-card__title { color: #e8e4e0; }
+        [data-theme="light"] .stack-card-ink .stack-card__num { color: rgba(232,228,224,0.5); }
+        [data-theme="light"] .stack-card-ink .stack-card__desc { color: rgba(232,228,224,0.55); }
+        [data-theme="light"] .stack-card-ink .stack-card__deco { color: rgba(255,255,255,0.04); }
 
         .stack-card__tags {
             display: flex;
