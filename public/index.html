@@ -15,6 +15,38 @@
     <title>Georgi Kirilov — AI Platform Engineer</title>
     <link rel="icon" type="image/jpeg" href="assets/photo.jpg">
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Georgi Kirilov",
+      "url": "https://georgikirilov.com",
+      "image": "https://georgikirilov.com/assets/photo.jpg",
+      "jobTitle": "AI Platform Engineer",
+      "email": "mailto:kirilov7@protonmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sofia",
+        "addressCountry": "BG"
+      },
+      "sameAs": ["https://www.linkedin.com/in/georgikk"],
+      "knowsAbout": [
+        "AI Infrastructure",
+        "GPU Fleet Orchestration",
+        "LLM Integration",
+        "Agentic Workflows",
+        "Model Context Protocol",
+        "Retrieval-Augmented Generation",
+        "Vector Databases",
+        "Diffusion Models",
+        "Model Fine-tuning",
+        "Python",
+        "PyTorch",
+        "CUDA"
+      ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -243,7 +275,16 @@
             letter-spacing: -0.045em;
             line-height: 0.9;
             color: var(--text);
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.125rem;
+        }
+
+        .hero-role {
+            font-family: 'Funnel Sans', sans-serif;
+            font-size: clamp(1.5rem, 2.6vw, 2.125rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: 2.25rem;
         }
 
         .hero-tags {
@@ -771,19 +812,21 @@
     <div class="hero-grid">
         <div class="hero-left">
             <h1 class="hero-name fade-in">Georgi<br>Kirilov</h1>
+            <p class="hero-role fade-in">AI Platform Engineer</p>
             <div class="hero-tags fade-in">
                 <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
                 <span class="tag">LLM Integration</span>
-                <span class="tag">GPU Fleet Orchestration</span>
-                <span class="tag">RAG</span>
+                <span class="tag">Agentic Workflows</span>
                 <span class="tag">MCP</span>
-                <span class="tag">Systems Engineering</span>
-                <span class="tag">Vector Databases</span>
+                <span class="tag">RAG</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">CUDA</span>
+                <span class="tag">Next.js</span>
                 <span class="tag">Docker</span>
-                <span class="tag">Redis</span>
-                <span class="tag">Laravel</span>
-                <span class="tag">Distributed Systems</span>
-                <span class="tag">Stable Diffusion</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">GPU Fleet Orchestration</span>
             </div>
             <div class="hero-cta fade-in">
                 <a href="assets/cv.pdf" class="btn btn-accent" download>
@@ -800,8 +843,8 @@
         <div class="hero-right fade-in">
             <img src="assets/photo.jpg" alt="Georgi Kirilov" class="hero-photo" onerror="this.style.display='none'">
             <div class="hero-stat">
-                <div class="hero-stat-number">100K+</div>
-                <div class="hero-stat-label">Daily active users<br>across platforms</div>
+                <div class="hero-stat-number">500K+</div>
+                <div class="hero-stat-label">Daily AI generations<br>across platforms</div>
             </div>
             <div class="hero-stat">
                 <div class="hero-stat-number">4+</div>
@@ -877,7 +920,7 @@
                 <a class="project-item__media" href="https://freegen.app" target="_blank" rel="noopener noreferrer">
                     <div class="project-item__bg bg-freegen">
                         <div class="project-logo" style="flex-direction: column; gap: 0.5rem;">
-                            <span style="font-size: 3rem; line-height: 1;">👍</span>
+                            <img src="assets/freegen-logo.svg" alt="freegen" style="width: 3.5rem; height: 3.5rem; object-fit: contain;">
                             <span class="project-logo-wordmark">freegen</span>
                         </div>
                         <div class="project-tags-overlay">
@@ -928,24 +971,23 @@
     </div>
     <div class="stack-cards">
 
-        <!-- 01 AI Infrastructure -->
+        <!-- 01 Agentic Systems -->
         <div class="stack-slot">
             <div class="stack-sticky">
                 <div class="stack-card stack-card-dark">
                     <div>
                         <p class="stack-card__num on-dark">01</p>
-                        <h3 class="stack-card__title on-dark">AI<br>Infrastructure</h3>
+                        <h3 class="stack-card__title on-dark">Agentic<br>Systems</h3>
                         <div class="stack-card__tags">
-                            <span class="tag">GPU Fleet Orchestration</span>
-                            <span class="tag">Auto-scaling</span>
-                            <span class="tag">Vast.ai</span>
-                            <span class="tag">Modal</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">Linux</span>
+                            <span class="tag">MCP Servers</span>
+                            <span class="tag">Tool-Calling</span>
+                            <span class="tag">Claude</span>
+                            <span class="tag">Autonomous Agents</span>
+                            <span class="tag">Telegram</span>
                         </div>
-                        <p class="stack-card__desc on-dark">End-to-end design and deployment of AI compute infrastructure — GPU fleet orchestration, auto-scaling, and cost optimization across cloud and bare-metal providers. Built for high availability and production-grade reliability.</p>
+                        <p class="stack-card__desc on-dark">LLMs that do things rather than just answer — tool-calling pipelines, MCP servers exposing real control planes, and autonomous daemons with human oversight. Built for systems where a wrong action costs money.</p>
                     </div>
-                    <div class="stack-card__deco on-dark"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2699.svg" alt="⚙️"></div>
+                    <div class="stack-card__deco on-dark"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9e0.svg" alt="🧠"></div>
                 </div>
             </div>
         </div>
@@ -971,23 +1013,45 @@
             </div>
         </div>
 
-        <!-- 03 GPU Pipeline -->
+        <!-- 03 AI Infrastructure -->
         <div class="stack-slot">
             <div class="stack-sticky">
                 <div class="stack-card stack-card-ink">
                     <div>
                         <p class="stack-card__num on-dark">03</p>
-                        <h3 class="stack-card__title on-dark">GPU Pipeline<br>Engineering</h3>
+                        <h3 class="stack-card__title on-dark">AI<br>Infrastructure</h3>
                         <div class="stack-card__tags">
-                            <span class="tag">Stable Diffusion</span>
-                            <span class="tag">Queue Management</span>
-                            <span class="tag">Redis</span>
-                            <span class="tag">Batching</span>
-                            <span class="tag">Python</span>
+                            <span class="tag">GPU Fleet Orchestration</span>
+                            <span class="tag">Auto-scaling</span>
+                            <span class="tag">Vast.ai</span>
+                            <span class="tag">Modal</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Linux</span>
                         </div>
-                        <p class="stack-card__desc on-dark">High-throughput inference pipelines for image and video generation — queue management, batching strategies, and latency optimization for demanding workloads. Millions of generations served across multiple platforms.</p>
+                        <p class="stack-card__desc on-dark">End-to-end design and deployment of AI compute infrastructure — GPU fleet orchestration, auto-scaling, and cost optimization across cloud and bare-metal providers. Built for high availability and production-grade reliability.</p>
                     </div>
-                    <div class="stack-card__deco on-ink"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="⚡"></div>
+                    <div class="stack-card__deco on-ink"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2699.svg" alt="⚙️"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 04 GPU Pipeline Engineering -->
+        <div class="stack-slot">
+            <div class="stack-sticky">
+                <div class="stack-card stack-card-light">
+                    <div>
+                        <p class="stack-card__num on-light">04</p>
+                        <h3 class="stack-card__title on-light">GPU Pipeline<br>Engineering</h3>
+                        <div class="stack-card__tags">
+                            <span class="tag tag-opp">Stable Diffusion</span>
+                            <span class="tag tag-opp">Queue Management</span>
+                            <span class="tag tag-opp">Redis</span>
+                            <span class="tag tag-opp">Batching</span>
+                            <span class="tag tag-opp">Python</span>
+                        </div>
+                        <p class="stack-card__desc on-light">High-throughput inference pipelines for image and video generation — queue management, batching strategies, and latency optimization for demanding workloads. Millions of generations served across multiple platforms.</p>
+                    </div>
+                    <div class="stack-card__deco on-light"><img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/26a1.svg" alt="⚡"></div>
                 </div>
             </div>
         </div>
